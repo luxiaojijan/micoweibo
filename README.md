@@ -1,6 +1,7 @@
-##《node.js开发指南》微博网站例子  
-* express@4.12.3
-* ejs@2.3.1
+##《node.js开发指南》微博网站例子(express@4.x)
+
+![](http://luxiaojian.qiniudn.com/2015-04-30 01_12_53.gif) 
+
 采用express@4.x,首先需要安装express的生成器express-generator。  
 
 	npm install -g express-generator
