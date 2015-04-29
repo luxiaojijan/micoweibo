@@ -3,7 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser');//cookie-parser解析cookie
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -11,7 +11,7 @@ var settings = require('./settings');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var partials = require('express-partials');
-var flash = require('connect-flash');
+var flash = require('connect-flash');//保存变量，只有当前和下一次请求才能访问。
 var app = express();
 
 
@@ -40,6 +40,9 @@ app.use(session({
     })
 }));
 app.listen(4000);
+
+//创建动态视图助手，让在模板中可以访问会话中的用户的数据。
+
 app.use(function(req, res, next) {
     res.locals.user = req.session.user;
     var error = req.flash('error');
