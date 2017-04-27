@@ -1,5 +1,7 @@
 ##《node.js开发指南》微博网站例子(express@4.x)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luxiaojian/micoweibo.svg)](https://greenkeeper.io/)
+
 ![](http://luxiaojian.qiniudn.com/2015-04-30 01_12_53.gif) 
 
 采用express@4.x,首先需要安装express的生成器express-generator。  
